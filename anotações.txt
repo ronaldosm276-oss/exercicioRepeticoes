@@ -1,3 +1,4 @@
+todas anotações para documentos que nem este, depois vê o que vai anotando no docs google
 git init
 git config --global user.email "ronaldosm276@gmail.com"
 git config --global user.name "Ronaldo S."
@@ -6,3 +7,5 @@ git branch -M main
 git push -u origin main
 git status
 git branch
+//toda e qualquer estrutura de repetição obrigatoriamente tem que ter uma condição de parar, se não roda infinitamente causa problemas de memoria, ou crash (flag de saida)
+
