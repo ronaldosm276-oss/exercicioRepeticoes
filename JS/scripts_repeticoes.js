@@ -79,7 +79,9 @@ btnExibir.addEventListener('click',(evt)=>{
 
 //COLEÇÃO DE DADOS COM ARRAYS
 
-transporte = ['Bicicleta', 'Carro', 'Moto', 'Ônibus', 'Avião', 'Tototo']
+transporte = ['Bicicleta', 'Carro', 'Moto', 'Ônibus', 'Avião', 'Tototo'
+//são apenas strings
+]
 
 //bicicleta = index 0; tototo = index 5 (começa do zero sempre)
 
@@ -92,9 +94,45 @@ for (i = 0; i < transporte.length; i++){
 //FOR IN 
 const divForin = document.querySelector('#div-forin')
 
+//document.querySelector targets the tag in the div
+
 for(let pos in transporte){
     console.log(transporte[pos])
     divForin.innerHTML += `${transporte[pos]} <br>`
 }
 
+//FOR OF
+
+const divForOf = document.querySelector('#div-forof')
+
+for(let elem of transporte){
+    divForOf.innerHTML += `${elem} <br>`
+}
+
+//COLEÇÃO DE PESSOAS - ARRAY DE OBJETO
+const pessoas = [
+    {nome: 'Maria', idade: 18, renda: 15000},
+    {nome: 'Rodrigo', idade: 51, renda: 2000},
+    {nome: 'Arthur', idade: 18, renda: 1.50},
+    {nome: 'Karoline', idade: 68, renda: 3.3}
+
+    //objeto literal, com chaves e propriedades
+
+]
+
+console.log('--------------LISTA FOR IN-------------')
+for(let indiceObjPessoa in pessoas){
+    console.log(pessoas[indiceObjPessoa].nome, pessoas[indiceObjPessoa].idade, pessoas [indiceObjPessoa].renda)
+
+    //note como essas duas fazem a mesma coisa, mas claro tem especialidades e questões de desempenho diferentes
+}
+console.log('--------------LISTA FOR OF-------------')
+for(let pessoa of pessoas){
+    console.log(pessoa.nome, pessoa.idade, pessoa.renda)
+}
+
+
+//for each
+
+const divForEach = document.querySelector('#div-foreach')
 
