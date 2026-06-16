@@ -9,3 +9,4 @@ git status
 git branch
 //toda e qualquer estrutura de repetição obrigatoriamente tem que ter uma condição de parar, se não roda infinitamente causa problemas de memoria, ou crash (flag de saida)
 
+eu não estou entendendo bem div, id, tags...
